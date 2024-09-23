@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Mandelbrot Set</title>
+  <link href="/style.css" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" href="/dark_mandelbrot.png"
+</head>
+
+<body>
+  <canvas id="canvas" width="800" height="600"></canvas>
+  <div class="sidebar">
+    <h3>Current Position</h3>
+    <div>Pixel ratio: <span id="pixel-ratio"></span></div>
+    <div>Left: <span id="left"></span></div>
+    <div>Right: <span id="right"></span></div>
+    <div>Top: <span id="top"></span></div>
+    <div>Bottom: <span id="bottom"></span></div>
+  </div>
+  <div class="mask" id="mask">
+    <!-- used to detect scrolling, dragging, and other events -->
+  </div>
+  <!-- <script src="obfuscated.js"></script> -->
+  <script src="/script.js"></script>
+
+ <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> 
+</body>
+
+</html>

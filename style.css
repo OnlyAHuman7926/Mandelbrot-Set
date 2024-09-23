@@ -1,0 +1,46 @@
+canvas {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffd;
+  animation-name: flash;
+  animation-duration: 6s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes flash {
+  0% {
+    background-color: #002;
+  }
+  33.3333333% {
+    background-color: #020;
+  }
+  66.6666667% {
+    background-color: #200;
+  }
+  100% {
+    background-color: #002;
+  }
+}
+body {
+  overflow: hidden;
+}
+.sidebar {
+  position: fixed;
+  top: 8px;
+  right: 8px;
+  padding: 8px;
+  border-radius: 8px;
+  z-index: 10;
+  background-color: #ffffffa0;
+}
+.mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 11;
+  touch-action: none;
+}
